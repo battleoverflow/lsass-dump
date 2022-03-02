@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
 
+*.vcxproj.user
+
 # Compiled Object files
 *.slo
 *.lo
@@ -30,3 +32,11 @@
 *.exe
 *.out
 *.app
+
+# Builds
+x64
+Debug
+
+# VS // VS Code
+.vs
+.vscode
