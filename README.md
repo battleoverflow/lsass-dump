@@ -3,7 +3,7 @@ Simple LSASS Dumper created using C++ as an alternative to using Mimikatz memory
 
 NOTE: You still need Mimikatz installed to read the dumped data. This program only dumps the data.
 
-VirusTotal Scan Results: 2/71 when running against the executable build (For personal/experiemental use only)
+VirusTotal Scan Results: 2/71 when running against the executable build (For personal/experimental use only)
 
 ## Usage
 The easiest way to build the executable is to just run the `Dump.cpp` file in Visual Studio, but if you prefer `g++`, that should work too.
