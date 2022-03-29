@@ -25,13 +25,11 @@ bool IsElevatedProcess()
         if (GetTokenInformation(token, TokenElevation, &elevation, sizeof(elevation), &token_check))
         {
             isElevated = elevation.TokenIsElevated;
+            cout << "[SUCCESS] Successfully started with elevated privileges" << endl;
         }
     }
 
-    if (token)
-    {
-        CloseHandle(token);
-    }
+    if (token) { CloseHandle(token); }
 
     return isElevated;
 }
@@ -179,7 +177,7 @@ int main(int argc, char** argv)
     // Handles the actual process dumping
     if (processHandler && processHandler != INVALID_HANDLE_VALUE)
     {
-        wcout << "Process handler successfully created" << endl;
+        wcout << "[SUCCESS] Process handler successfully created" << endl;
 
         bool isDumped = MiniDumpWriteDump(processHandler, processPID, output, (MINIDUMP_TYPE)0x00000002, NULL, NULL, NULL);
 
