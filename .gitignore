@@ -36,6 +36,7 @@
 # Builds
 x64
 Debug
+Build/
 
 # VS // VS Code
 .vs

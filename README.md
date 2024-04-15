@@ -11,6 +11,7 @@ The easiest way to build the executable is to just run the `Dump.cpp` file in Vi
 After compiling the code into an executable, run it!
 
 You can run the executable either way:
+
 ```powershell
 > ./Dump.exe
 or
